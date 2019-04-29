@@ -23,6 +23,9 @@
     }
     document.getElementById('goBackUnLock').onclick = function (e) {
         window.location.href = "mobike://bridge?name=response&callback=1&data=%7B%22type%22%3A12%2C%22data%22%3A%22%22%7D";
+        window.setTimeout(function(){
+            window.location.href = "mobike://bridge?name=close&callback=1&data=%7B%22response%22%3A15%7D";
+        }, 0)
     }
     document.getElementById('openMeituanApp').onclick = function (e) {
         if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
