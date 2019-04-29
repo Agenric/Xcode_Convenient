@@ -8,7 +8,11 @@
 </head>
 
 <body>
-    <a href="javascript:;" id="goBack">继续开锁</a>
+    <br/>
+    <a href="javascript:;" id="goBack">我知道了</a>
+    <br/>
+    <a href="javascript:;" id="goBackUnLock">继续开锁</a>
+    <br/>
     <a href="javascript:;" id="openMeituanApp">去美团App用车</a>
 </body>
 
@@ -16,6 +20,9 @@
 <script type="text/javascript">
     document.getElementById('goBack').onclick = function (e) {
         window.location.href = "mobike://bridge?name=close&callback=1&data=%7B%22response%22%3A15%7D";
+    }
+    document.getElementById('goBackUnLock').onclick = function (e) {
+        window.location.href = "mobike://bridge?name=response&callback=1&data=%7B%22type%22%3A12%2C%22data%22%3A%22%22%7D";
     }
     document.getElementById('openMeituanApp').onclick = function (e) {
         if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
