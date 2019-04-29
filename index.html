@@ -15,7 +15,7 @@
 </html>
 <script type="text/javascript">
     document.getElementById('goBack').onclick = function (e) {
-        window.location.href = "mobike://bridge?name=close";
+        window.location.href = "mobike://bridge?name=close&callback=1&data=%7B%22response%22%3A15%7D";
     }
     document.getElementById('openMeituanApp').onclick = function (e) {
         if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
