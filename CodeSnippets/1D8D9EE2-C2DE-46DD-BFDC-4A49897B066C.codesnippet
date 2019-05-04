@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>testcode</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"TestCode %s", __FUNCTION__);
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSLog(@"TestCode %s", __FUNCTION__);
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    NSLog(@"TestCode %s", __FUNCTION__);
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    NSLog(@"TestCode %s", __FUNCTION__);
+}
+
+- (void)willMoveToParentViewController:(UIViewController *)parent {
+    NSLog(@"TestCode %s", __FUNCTION__);
+}
+
+- (void)didMoveToParentViewController:(UIViewController *)parent {
+    NSLog(@"TestCode %s", __FUNCTION__);
+}
+
+- (void)removeFromParentViewController {
+    NSLog(@"TestCode %s", __FUNCTION__);
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1D8D9EE2-C2DE-46DD-BFDC-4A49897B066C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>view vc life cycle</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>TestCode</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
